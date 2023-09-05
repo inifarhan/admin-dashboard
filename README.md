@@ -2,8 +2,6 @@
 
 ![Promptopia](https://i.postimg.cc/pxq0Bg0T/Admin-dashboard.png)
 
-### [Live Site](https://promptopia-one-lilac.vercel.app/)
-
 ## Introduction
 Admin Dashboard is a fullstack application that you can use to manage your e-commerce store.
 
