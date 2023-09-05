@@ -129,7 +129,7 @@ export const updateUser = async (req, res) => {
     const { name, email } = req.body
     const refreshToken = req.cookies.refreshToken
 
-    if (!refreshToken) res.sendStatus(401) 
+    if (!refreshToken) return res.sendStatus(401) 
     if (!name) return res.status(400).json({ message: "Name is required"})
     if (!email) return res.status(400).json({ message: "Email is required" })
 

@@ -35,13 +35,38 @@ export const getAllProducts = async (req, res) => {
 // GET user products
 export const getUserProducts = async (req, res) => {
   try {
-    const products = await prisma.product.findMany({
+    const userId = req.params.userId
+    const page = Number(req.query.page) || 0
+    const limit = Number(req.query.limit) || 5
+    const search = req.query.search_query || ""
+    const offset = page * limit
+    const totalRows = await prisma.product.count({
       where: {
-        userId: req.params.userId
+        userId,
+        name: {
+          contains: search
+        }
+      }
+    })
+    const totalPage = Math.ceil(totalRows / limit)
+    const result = await prisma.product.findMany({
+      skip: offset,
+      take: limit,
+      where: {
+        userId,
+        name: {
+          contains: search
+        }
       }
     })
 
-    res.status(200).json(products)
+    res.json({
+      result,
+      page,
+      limit,
+      totalRows,
+      totalPage
+    })
   } catch (error) {
     console.log(error)
   }
