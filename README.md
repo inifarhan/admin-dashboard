@@ -20,12 +20,15 @@ In the application, I use JWT Auth to authenticate the users, it also includes t
 ### Cloning the repository
 
 ```shell
-git clone https://github.com/inifarhan/promptopia.git
+git clone https://github.com/inifarhan/admin-dashboard.git
 ```
 
 ### Install packages
 
 ```shell
+cd backend
+npm i
+cd frontend
 npm i
 ```
 
@@ -33,17 +36,18 @@ npm i
 
 
 ```js
-MONGODB_URI=
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
-NEXTAUTH_URL=
-NEXTAUTH_URL_INTERNAL=
-NEXTAUTH_SECRET=
+PORT=
+REFRESH_TOKEN_SECRET=
+ACCESS_TOKEN_SECRET=
+DATABASE_URL=
 ```
 
 ### Start the app
 
 ```shell
+cd backend
+npm run dev
+cd frontend
 npm run dev
 ```
 
