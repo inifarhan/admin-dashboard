@@ -1,4 +1,4 @@
-fxqsegzkwgewaffaa# Admin Dashboard
+fxqsegzkwgfewaffaa# Admin Dashboard
 
 ![Promptopia](https://i.postimg.cc/pxq0Bg0T/Admin-dashboard.png)
 
