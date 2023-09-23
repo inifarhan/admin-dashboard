@@ -1,4 +1,4 @@
-dpmpwzpzacpcpazoazpcaa# Admin Dashboard
+idpmpwzpzacpcpazoazpcaa# Admin Dashboard
 
 ![Promptopia](https://i.postimg.cc/pxq0Bg0T/Admin-dashboard.png)
 
