@@ -30,7 +30,7 @@ cd frontend
 npm i
 ```
 
-### Setup .env file
+### Setup .env file for the backend application
 
 
 ```js
